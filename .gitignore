@@ -1,0 +1,28 @@
+.ruby-gemset
+.vagrant
+Berksfile.lock
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+# Virtualbox
+*.vmdk
+*.vdi
+
+#Chef
+.rake_test_cache
+.chef
+.DS_Store
+cookbooks/.DS_Store
+.idea/
+*.iml
+.rvmrc
+.kitchen
