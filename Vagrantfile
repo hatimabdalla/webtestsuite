@@ -24,6 +24,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     node1.vm.network :private_network, ip: "192.168.56.11"
 
     node1.vm.provision :chef_solo do |chef|
+      chef.formatter = "min"
+      chef.log_level = "debug"
       chef.cookbooks_path = "cookbooks"
       chef.roles_path = "roles"
       chef.data_bags_path = "data_bags"
