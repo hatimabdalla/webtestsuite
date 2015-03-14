@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.data_bags_path = "data_bags"
       chef.environments_path = "environments"    # By default this is empty, so you have to specify a path
       chef.node_name = "node1"                   # By default this is empty, however some cookbooks need it
-      chef.run_list = []    # Specify as a lit like this: %w[ role[role1] role[role2] ]
+      chef.run_list = %w[role[linux-base]]    # Specify as a lit like this: %w[ role[role1] role[role2] ]
     end
   end
 end

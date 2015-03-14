@@ -21,7 +21,7 @@ bin/*
 .rake_test_cache
 .chef
 .DS_Store
-cookbooks/.DS_Store
+cookbooks/*
 .idea/
 *.iml
 .rvmrc
